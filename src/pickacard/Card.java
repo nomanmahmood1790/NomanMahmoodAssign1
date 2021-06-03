@@ -8,7 +8,7 @@ package pickacard;
  * This code is to be used in Exercise 1. When you create your own branch,
  * add your name as an author.
  * @author Noman Mahmood
- * @since June 3rd, 2021
+ * Date:   June 3rd, 2021
  */
 public class Card {
 
@@ -22,14 +22,28 @@ public class Card {
     public String getSuit() {
         return suit;
     }
-
+    
     /**
      * @param suit the suit to set
      */
     public void setSuit(String suit) {
         this.suit = suit;
     }
+
+    /**
+     * @param value the value to set
+     */
+    public void setValue(int value) {
+        this.value = value;
+    }
    
-   
+    /**
+     * @return the value
+     */
+   public int getValue() {
+        return value;
+    }
+
+
     
 }
