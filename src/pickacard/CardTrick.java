@@ -26,10 +26,10 @@ public class CardTrick {
             magicHand[i] = c;
         }
         
-        Card c = new Card();
-        c.setValue(0);
-        c.setSuit("Clubs");
-        magicHand[magichand.length] = c;
+        Card luckyCard = new Card();
+        luckyCard.setValue(0);
+        luckyCard.setSuit("Clubs");
+        magicHand[magichand.length] = luckyCard;
 
         // code to ask the user for Card value and suit, create their card
         Scanner in = new Scanner(System.in);
