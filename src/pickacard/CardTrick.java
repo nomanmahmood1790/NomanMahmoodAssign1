@@ -27,18 +27,19 @@ public class CardTrick {
 
         // code to ask the user for Card value and suit, create their card
         Scanner in = new Scanner(System.in);
+        System.out.println("Enter a card value 1 to 13");
         int v = in.nextInt();
-        int s = in.nextInt();
+        System.out.println("Enter a card suit: Hearts, Diamonds, Spades, or Clubs");
+        String s = in.next();
         
         boolean valueFound = false;
         boolean suitFound = false;
         
         // search magicHand here
         for (int i = 0; i < magicHand.length; i++) {
-            Card c = new Card();
-            if(magicHand[i].getValue() == v))
+            if (magicHand[i].getValue() == v)
                 valueFound = true;
-            if(magicHand[i].getSuit() == s)
+            if (magicHand[i].getSuit().equals(s))
                 suitFound = true;
         }
         
