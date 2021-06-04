@@ -38,7 +38,7 @@ public class CardTrick {
         luckyCard.setValue(0);
         luckyCard.setSuit("Clubs");
         int v = luckyCard.getValue();
-        int s = luckyCard.getSuit();
+        String s = luckyCard.getSuit();
         
         boolean valueFound = false;
         boolean suitFound = false;
