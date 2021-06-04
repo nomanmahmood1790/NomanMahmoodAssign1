@@ -18,25 +18,27 @@ public class CardTrick {
 
         Random rand = new Random();
         
-        //for (int i = 0; i < magicHand.length; i++) {
-        for (int i = 0; i < magicHand.length-1; i++) {
+        for (int i = 0; i < magicHand.length; i++) {
             Card c = new Card();
             c.setValue(rand.nextInt(12)+1);
             c.setSuit(Card.SUITS[rand.nextInt(3)]);
             magicHand[i] = c;
         }
         
-        Card luckyCard = new Card();
-        luckyCard.setValue(0);
-        luckyCard.setSuit("Clubs");
-        magicHand[magichand.length] = luckyCard;
+        
 
         // code to ask the user for Card value and suit, create their card
-        Scanner in = new Scanner(System.in);
+        /*Scanner in = new Scanner(System.in);
         System.out.println("Enter a card value 1 to 13: ");
         int v = in.nextInt();
         System.out.println("Enter a card suit: Hearts, Diamonds, Spades, or Clubs");
-        String s = in.next();
+        String s = in.next();*/
+        
+        Card luckyCard = new Card();
+        luckyCard.setValue(0);
+        luckyCard.setSuit("Clubs");
+        int v = luckyCard.getValue();
+        int s = luckyCard.getSuit();
         
         boolean valueFound = false;
         boolean suitFound = false;
